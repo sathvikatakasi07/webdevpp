@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Web Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Advanced Styling & JavaScript</h1>
+  </header>
+
+  <main>
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button class="nav-btn" onclick="prevImage()">⏪</button>
+        <img id="carouselImage" src="" alt="Carousel" />
+        <button class="nav-btn" onclick="nextImage()">⏩</button>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+      <h2>Mini Quiz</h2>
+      <div id="quiz">
+        <p id="question"></p>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+        <p id="score"></p>
+      </div>
+    </section>
+
+    <!-- Joke API Section -->
+    <section class="joke-section">
+      <h2>Need a Laugh?</h2>
+      <button onclick="getJoke()">Fetch Joke</button>
+      <div id="loader" class="hidden">Loading...</div>
+      <p id="joke"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
